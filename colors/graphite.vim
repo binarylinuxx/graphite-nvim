@@ -192,20 +192,35 @@ execute "highlight SpellLocal   guifg=" . s:fg . " gui=undercurl"
 execute "highlight SpellRare    guifg=" . s:fg . " gui=undercurl"
 
 " =============================================
-" NOICE NOTIFICATIONS
+" NOTIFY NOTIFICATIONS
 " =============================================
-execute "highlight NoiceNotifyINFOBorder guifg=" . s:gray_dark . " guibg=" . s:bg_dark
-execute "highlight NoiceNotifyINFOIcon   guifg=" . s:fg_bright
-execute "highlight NoiceNotifyINFOTitle  guifg=" . s:fg_bright . " gui=bold"
-execute "highlight NoiceNotifyINFOBody   guifg=" . s:fg
+" INFO
+execute "highlight NotifyINFOBorder guifg=" . s:gray_dark . " guibg=" . s:bg_dark
+execute "highlight NotifyINFOIcon   guifg=" . s:fg_bright
+execute "highlight NotifyINFOTitle  guifg=" . s:fg_bright . " gui=bold"
+execute "highlight NotifyINFOBody   guifg=" . s:fg
 
-execute "highlight NoiceNotifyWARNBorder guifg=" . s:gray_mid . " guibg=" . s:bg_dark
-execute "highlight NoiceNotifyWARNIcon   guifg=" . s:gray_light
-execute "highlight NoiceNotifyWARNTitle  guifg=" . s:gray_light . " gui=bold"
-execute "highlight NoiceNotifyWARNBody   guifg=" . s:fg
+" WARN
+execute "highlight NotifyWARNBorder guifg=" . s:gray_mid . " guibg=" . s:bg_dark
+execute "highlight NotifyWARNIcon   guifg=" . s:gray_light
+execute "highlight NotifyWARNTitle  guifg=" . s:gray_light . " gui=bold"
+execute "highlight NotifyWARNBody   guifg=" . s:fg
 
-execute "highlight NoiceNotifyERRORBorder guifg=" . "#8B0000" . " guibg=" . s:bg_dark
-execute "highlight NoiceNotifyERRORIcon   guifg=" . "#FF5C5C"
-execute "highlight NoiceNotifyERRORTitle  guifg=" . s:white . " gui=bold"
-execute "highlight NoiceNotifyERRORBody   guifg=" . s:fg
+" ERROR
+execute "highlight NotifyERRORBorder guifg=" . s:gray_dark . " guibg=" . s:bg_dark
+execute "highlight NotifyERRORIcon   guifg=" . s:fg_bright
+execute "highlight NotifyERRORTitle  guifg=" . s:fg_bright . " gui=bold"
+execute "highlight NotifyERRORBody   guifg=" . s:fg
+
+" DEBUG
+execute "highlight NotifyDEBUGBorder guifg=" . s:gray_mid . " guibg=" . s:bg_dark
+execute "highlight NotifyDEBUGIcon   guifg=" . s:gray_light
+execute "highlight NotifyDEBUGTitle  guifg=" . s:gray_light . " gui=bold"
+execute "highlight NotifyDEBUGBody   guifg=" . s:fg
+
+" TRACE
+execute "highlight NotifyTRACEBorder guifg=" . s:gray_mid . " guibg=" . s:bg_dark
+execute "highlight NotifyTRACEIcon   guifg=" . s:gray_light
+execute "highlight NotifyTRACETitle  guifg=" . s:gray_light . " gui=bold"
+execute "highlight NotifyTRACEBody   guifg=" . s:fg
 
